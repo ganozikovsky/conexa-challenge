@@ -2,8 +2,6 @@ import { ExceptionFilter, Catch, ArgumentsHost, HttpException, Logger } from '@n
 
 import { Request, Response } from 'express';
 
-import { IS_PRODUCTION } from '../constants';
-
 @Catch(HttpException)
 export class HttpExceptionFilter implements ExceptionFilter {
   private readonly logger = new Logger(HttpExceptionFilter.name);
@@ -45,7 +43,6 @@ export class HttpExceptionFilter implements ExceptionFilter {
       message,
       error,
       ...(errors.length > 0 ? { errors } : {}),
-      ...(exception.stack && !IS_PRODUCTION ? { stack: exception.stack } : {}),
     };
 
     response.status(status).json(responseBody);

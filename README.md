@@ -1,6 +1,12 @@
-# 🚀 Star Wars Movies API
+# Star Wars Movies API
 
 This API provides a comprehensive interface for managing Star Wars movie information, synchronizing with the SWAPI (Star Wars API), and allowing authenticated users to interact with the data.
+
+# 🚀 Deployment 
+
+The API is deployed on DigitalOcean and can be accessed at [https://conexa.ganozikovsky.tech](https://conexa.ganozikovsky.tech).
+
+Swagger documentation is available at [https://conexa.ganozikovsky.tech/api-docs](https://conexa.ganozikovsky.tech/api-docs).
 
 ## 🛠️ Technologies Used
 
